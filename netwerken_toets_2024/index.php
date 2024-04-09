@@ -38,7 +38,7 @@
         ini_set('display_errors', 'On');
         error_reporting(E_ALL);
 
-        include 'config/db_config.php';
+        include 'config/db_config_example.php';
         $a = $conn->query("SELECT * FROM students");
         // var_dump($a->fetch_assoc());
         while ($b = $a->fetch_assoc()) {
